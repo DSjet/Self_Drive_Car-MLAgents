@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 344113844}
   - component: {fileID: 344113843}
   - component: {fileID: 344113842}
+  - component: {fileID: 344113846}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -365,6 +366,18 @@ Transform:
   m_Father: {fileID: 791081482}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &344113846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344113841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fae3d95bdae054e96690f13cc9c778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +697,7 @@ GameObject:
   - component: {fileID: 1204589533}
   - component: {fileID: 1204589532}
   - component: {fileID: 1204589531}
+  - component: {fileID: 1204589535}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -777,6 +791,18 @@ Transform:
   m_Father: {fileID: 791081482}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1204589535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204589530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fae3d95bdae054e96690f13cc9c778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1299914692
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +961,7 @@ GameObject:
   - component: {fileID: 1604687220}
   - component: {fileID: 1604687219}
   - component: {fileID: 1604687218}
+  - component: {fileID: 1604687222}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1028,6 +1055,18 @@ Transform:
   m_Father: {fileID: 791081482}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1604687222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604687217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fae3d95bdae054e96690f13cc9c778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1700129336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1350,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   targetTransform: {fileID: 1299914697}
   moveSpeed: 3
 --- !u!114 &1753404159
@@ -1327,18 +1366,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 2
+    VectorObservationSize: 6
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 6
+      m_NumContinuousActions: 2
       BranchSizes: 
-    VectorActionSize: 06000000
+    VectorActionSize: 02000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
-  m_InferenceDevice: 3
-  m_BehaviorType: 1
+  m_InferenceDevice: 1
+  m_BehaviorType: 0
   m_BehaviorName: Move To Goal
   TeamId: 0
   m_UseChildSensors: 1
