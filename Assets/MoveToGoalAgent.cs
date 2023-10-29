@@ -12,7 +12,7 @@ public class MoveToGoalAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        transform.position = new Vector3(2.8048861f, 0.730000019f, -0.293699503f);
+        transform.position = Vector3.zero;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -44,7 +44,7 @@ public class MoveToGoalAgent : Agent
             SetReward(+1f);
             EndEpisode();
         }
-
+        
         if (other.TryGetComponent<Wall> (out Wall wall))
         {
             SetReward(-1f);
