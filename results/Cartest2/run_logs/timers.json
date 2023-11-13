@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1699869994",
+        "python_version": "3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\teddy\\OneDrive\\Documents\\Projects\\Unity\\Aruvana\\Self_Driving_Car-MLAgents\\venv\\Scripts\\mlagents-learn --run-id=Cartest2",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.0.1+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1699870026"
+    },
+    "total": 31.9656968,
+    "count": 1,
+    "self": 0.0035911999999989064,
+    "children": {
+        "run_training.setup": {
+            "total": 0.08535420000000027,
+            "count": 1,
+            "self": 0.08535420000000027
+        },
+        "TrainerController.start_learning": {
+            "total": 31.8767514,
+            "count": 1,
+            "self": 0.0002948000000060347,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 31.876445999999998,
+                    "count": 1,
+                    "self": 31.876445999999998
+                },
+                "trainer_threads": {
+                    "total": 9.999999974752427e-07,
+                    "count": 1,
+                    "self": 9.999999974752427e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 9.599999998499698e-06,
+                    "count": 1,
+                    "self": 9.599999998499698e-06
+                }
+            }
+        }
+    }
+}

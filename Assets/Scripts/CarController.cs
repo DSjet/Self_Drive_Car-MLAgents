@@ -32,9 +32,7 @@ public class CarController : MonoBehaviour
 
     private void GetInput()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-        isBraking = Input.GetKey(KeyCode.Space);
+        
     }
 
     private void HandleMotor()
@@ -42,7 +40,7 @@ public class CarController : MonoBehaviour
         foreach (var wheel in wheelColliders)
         {
             wheel.motorTorque = verticalInput * motorForce;
-            Debug.Log(wheel.motorTorque);
+            //Debug.Log(wheel.motorTorque);
         }
         
         currentBreakForce = isBraking ? breakForce : 0f;
@@ -88,5 +86,13 @@ public class CarController : MonoBehaviour
         wheelCollider.GetWorldPose(out pos, out rot);
         wheelTransform.rotation = rot;
         wheelTransform.position = pos;
+    }
+
+    public void StopCompletely()
+    {
+        foreach (var wheel in wheelColliders)
+        {
+            wheel.motorTorque = 0;
+        }
     }
 }

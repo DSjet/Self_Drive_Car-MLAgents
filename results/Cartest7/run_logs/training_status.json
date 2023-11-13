@@ -1,0 +1,29 @@
+{
+    "CarDriverBehavior": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\Cartest7\\CarDriverBehavior\\CarDriverBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1699870962.6206224,
+                "auxillary_file_paths": [
+                    "results\\Cartest7\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\Cartest7\\CarDriverBehavior.onnx",
+            "reward": null,
+            "creation_time": 1699870962.6206224,
+            "auxillary_file_paths": [
+                "results\\Cartest7\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cpu"
+    }
+}
