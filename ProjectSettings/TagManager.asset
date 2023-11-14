@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Wall
   - Checkpoint
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -13,9 +13,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Wall
-  - Checkpoint
   - 
+  - 
+  - Vision Camera
   - 
   - 
   - 
