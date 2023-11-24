@@ -31,6 +31,7 @@ public class CarDriverAgent : Agent
         if (e.carTransform == transform)
         {
             AddReward(1f);
+            Debug.Log("Add Reward 1f");
         }
     }
 
@@ -39,16 +40,16 @@ public class CarDriverAgent : Agent
         if (e.carTransform == transform)
         {
             AddReward(-1f);
+            Debug.Log("Add Punishment -1f");
         }
     }
 
     public override void OnEpisodeBegin()
     {
-         transform.position = spawnPosition.position + new Vector3(Random.Range(-5f, +5f), 0, Random.Range(-5f, +5f));
-        transform.forward = spawnPosition.forward;
-        trackCheckpoints.ResetCheckpoint();
-        _carController.StopCompletely();
-        Debug.Log("Episode Begin");
+        //transform.position = spawnPosition.position + new Vector3(Random.Range(-5f, +5f), 0, Random.Range(-5f, +5f));
+        //transform.forward = spawnPosition.forward;
+        //trackCheckpoints.ResetCheckpoint();
+        //_carController.StopCompletely();
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -56,12 +57,10 @@ public class CarDriverAgent : Agent
         Vector3 checkpointForward = trackCheckpoints.GetNextCheckpoint().transform.forward;
         float directionDot = Vector3.Dot(transform.forward, checkpointForward);
         sensor.AddObservation(directionDot);
-        Debug.Log("Collecting Observations");
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-        Debug.Log("Action Received");
         float forwardAmount = 0f;
         float turnAmount = 0f;
 
@@ -111,14 +110,16 @@ public class CarDriverAgent : Agent
         if (collision.gameObject.CompareTag("Wall"))
         {
             AddReward(-0.5f);
+            Debug.Log("Add Punishment -0.5f");
         }
     }
 
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            AddReward(-0.1f);
-        }
-    }
+    //private void OnCollisionStay(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Wall"))
+    //    {
+    //        AddReward(-0.1f);
+    //        Debug.Log("Add Punishment -0.1f");
+    //    }
+    //}
 }

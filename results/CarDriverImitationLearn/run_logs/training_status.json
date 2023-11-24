@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cpu"
+    },
+    "CarDriverBehavior": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1700123459.5351682,
+                "auxillary_file_paths": [
+                    "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 0,
+                "file_path": "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1700123498.858308,
+                "auxillary_file_paths": [
+                    "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 0,
+                "file_path": "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1700123531.4454596,
+                "auxillary_file_paths": [
+                    "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 0,
+                "file_path": "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1700123616.4730742,
+                "auxillary_file_paths": [
+                    "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 135799,
+                "file_path": "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-135799.onnx",
+                "reward": null,
+                "creation_time": 1700124383.216326,
+                "auxillary_file_paths": [
+                    "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-135799.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 135799,
+            "file_path": "results\\CarDriverImitationLearn\\CarDriverBehavior.onnx",
+            "reward": null,
+            "creation_time": 1700124383.216326,
+            "auxillary_file_paths": [
+                "results\\CarDriverImitationLearn\\CarDriverBehavior\\CarDriverBehavior-135799.pt"
+            ]
+        }
+    }
+}
