@@ -45,7 +45,7 @@ public class TrackCheckpoints : MonoBehaviour
         }
         else
         {
-            OnCarIncorrectCheckpoint?.Invoke(this, new CarCheckpointEventArgs {carTransform = carTransform});
+            OnCarIncorrectCheckpoint?.Invoke(this, new CarCheckpointEventArgs { carTransform = carTransform });
             Debug.Log("Incorrect");
         }
     }

@@ -1,0 +1,89 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1701016461",
+        "python_version": "3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\teddy\\OneDrive\\Documents\\Projects\\Unity\\Aruvana\\Self_Driving_Car-MLAgents\\venv\\Scripts\\mlagents-learn Config/carDriver.yaml --run-id=SelfDriveAgentTrain1 --resume",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.0.1+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1701016472"
+    },
+    "total": 10.830050199999999,
+    "count": 1,
+    "self": 0.010814399999997448,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09083400000000008,
+            "count": 1,
+            "self": 0.09083400000000008
+        },
+        "TrainerController.start_learning": {
+            "total": 10.7284018,
+            "count": 1,
+            "self": 0.0001050999999989699,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 10.524330500000001,
+                    "count": 1,
+                    "self": 5.196230700000001,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 5.3280998,
+                            "count": 2,
+                            "self": 0.0002589000000012831,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.08463089999999962,
+                                    "count": 2,
+                                    "self": 0.08141310000000068,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.003217799999998938,
+                                            "count": 2,
+                                            "self": 0.003217799999998938
+                                        }
+                                    }
+                                },
+                                "make_demo_buffer": {
+                                    "total": 5.2432099999999995,
+                                    "count": 2,
+                                    "self": 0.7451352999998315,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 4.498074700000168,
+                                            "count": 31948,
+                                            "self": 2.507664300000563,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 1.9904103999996048,
+                                                    "count": 127792,
+                                                    "self": 1.9904103999996048
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.2039662,
+                    "count": 1,
+                    "self": 0.01064230000000066,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.19332389999999933,
+                            "count": 1,
+                            "self": 0.19332389999999933
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -40,16 +40,17 @@ public class CarDriverAgent : Agent
         if (e.carTransform == transform)
         {
             AddReward(-1f);
+            EndEpisode();
             Debug.Log("Add Punishment -1f");
         }
     }
 
     public override void OnEpisodeBegin()
     {
-        //transform.position = spawnPosition.position + new Vector3(Random.Range(-5f, +5f), 0, Random.Range(-5f, +5f));
-        //transform.forward = spawnPosition.forward;
-        //trackCheckpoints.ResetCheckpoint();
-        //_carController.StopCompletely();
+        transform.position = spawnPosition.position + new Vector3(Random.Range(-5f, +5f), 0, Random.Range(-5f, +5f));
+        transform.forward = spawnPosition.forward;
+        trackCheckpoints.ResetCheckpoint();
+        _carController.StopCompletely();
     }
 
     public override void CollectObservations(VectorSensor sensor)

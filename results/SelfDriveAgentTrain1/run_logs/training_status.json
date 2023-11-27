@@ -1,0 +1,29 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cpu"
+    },
+    "CarDriverBehavior": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\SelfDriveAgentTrain1\\CarDriverBehavior\\CarDriverBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1701016472.1143193,
+                "auxillary_file_paths": [
+                    "results\\SelfDriveAgentTrain1\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\SelfDriveAgentTrain1\\CarDriverBehavior.onnx",
+            "reward": null,
+            "creation_time": 1701016472.1143193,
+            "auxillary_file_paths": [
+                "results\\SelfDriveAgentTrain1\\CarDriverBehavior\\CarDriverBehavior-0.pt"
+            ]
+        }
+    }
+}
